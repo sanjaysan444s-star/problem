@@ -1,0 +1,20 @@
+<html>
+    
+    <body>
+        <center>
+        <input type="text" id="mytext" placeholder="Enter text ">
+        <button onclick=showText()>submit</button>
+        <h2>output</h2>
+        <p id="output"></p>
+        </center>
+    </body>
+    
+</html>
+
+<script>
+    function showText() {
+        var a = document.getElementById("mytext").value
+        document.getElementById("output").innerHTML += a+"<br>"
+        document.getElementById("mytext").value = ""
+    }
+</script>
